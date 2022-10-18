@@ -1,0 +1,16 @@
+describe('Search for flight on Spicejet website', async () => {
+    it('Navigate to the Spicejet website', async () => {
+        await browser.maximizeWindow()
+        await browser.url("https://www.spicejet.com/")
+        const roundtripbtn = await browser.$("//div[text()='Round Trip']")
+        roundtripbtn.click()
+        const returndatecalbtn = await browser.$("//div[text()='Return Date']")
+        returndatecalbtn.click()
+        const selectdate = await browser.$("//div[@data-testid='undefined-month-November-2022']/div[3]//div[@data-testid='undefined-calendar-day-10']")
+        selectdate.click()
+        const optionbtn = await browser.$("//div[text()='Armed Forces']")
+        optionbtn.click()
+        const findbtn = await browser.$("//div[text()='Search Flight']")
+        findbtn.click()
+     })
+})

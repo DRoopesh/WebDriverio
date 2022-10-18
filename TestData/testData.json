@@ -1,0 +1,11 @@
+[
+   {
+    "userurl" : "http://rmgtestingserver/domain/Online_Food_Ordering_System/login.php",
+    "username" : "drv",
+    "password" : "drv469",   
+    "adminurl" : "http://rmgtestingserver/domain/Online_Food_Ordering_System/admin/",
+    "adminusername" : "admin",
+    "adminpassword" : "codeastro"
+    }
+
+]
